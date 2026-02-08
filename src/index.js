@@ -10,8 +10,6 @@ dotenv.config({
 
 let port = process.env.PORT || 8000;
 
-
-
 connectDB()
 
 .then(()=>{
