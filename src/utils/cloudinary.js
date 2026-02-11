@@ -25,8 +25,9 @@ import fs from "fs";
 
       })
        
-      console.log("file is uploaded on clodinary !!!!" , response.url)
-
+      // console.log("file is uploaded on clodinary !!!!" , response.url)
+      
+      fs.unlinkSync(localFilepath)
       return response;
 
     }
